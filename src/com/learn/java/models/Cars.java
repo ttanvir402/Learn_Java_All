@@ -11,7 +11,7 @@ public abstract class Cars {
 
     }
 
-    //Contructor with args
+    //Constructor with args
     public Cars(String make, String model, int year, int noOfSeats){
         this.make = make;
         this.model = model;
@@ -19,9 +19,7 @@ public abstract class Cars {
         this.noOfSeats = noOfSeats;
     }
 
-    public String getMake() {
-        return make;
-    }
+    public String getMake() {return make;}
 
     public void setMake(String make) {
         this.make = make;
@@ -54,4 +52,5 @@ public abstract class Cars {
     //Abstract method with no definition
     //Let's assume that, formula to get mileage is different for different cars
     public abstract double getMileage();
+
 }
